@@ -25,3 +25,5 @@ export async function fetchMovies(query: string, page = 1): Promise<MovieRespons
   const response = await api.get<MovieResponse>('/search/movie', { params })
   return response.data
 }
+
+console.log(import.meta.env)
